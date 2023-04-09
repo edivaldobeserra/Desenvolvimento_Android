@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">ApplistaCurso</string>
-    <string name="txt_titulo">Aplicativo Lista Vip Curso android</string>
+    <string name="txt_titulo">Aplicativo Lista Vip devandroid.edivaldo.applistacurso.model.Curso android</string>
     <string name="txt_hint_edit_primeiro_nome">Primeiro nome</string>
     <string name="txt_hint_edit_sobrenome">Sobrenome</string>
-    <string name="txt_hint_edit_nome_do_curso_desejado">Nome Do Curso Desejado</string>
+    <string name="txt_hint_edit_nome_do_curso_desejado">Nome Do devandroid.edivaldo.applistacurso.model.Curso Desejado</string>
     <string name="txt_hint_edit_telefone_de_contado">Telefone de Contado</string>
     <string name="txt_button_salvar">SALVAR</string>
     <string name="txt_button_limpar">LIMPAR</string>
