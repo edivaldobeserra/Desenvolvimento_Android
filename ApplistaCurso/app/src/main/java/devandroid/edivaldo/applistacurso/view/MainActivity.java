@@ -11,6 +11,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     Pessoa pessoa;
+    Pessoa outraPessoa;
+
+    String dadosPessoa;
+    String dadosOutraPessoa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
+        pessoa.setPrimeiroNome("Edivaldo");
+        pessoa.setSobreNome("Beserra");
+        pessoa.setCursoDesejado("Java");
+        pessoa.setTelefoneContato("15 - 9918812545");
+
+        outraPessoa = new Pessoa();
+        outraPessoa.setPrimeiroNome("Natacha");
+        outraPessoa.setSobreNome("Oliveira");
+        outraPessoa.setCursoDesejado("Maquiagem");
+        outraPessoa.setTelefoneContato("15 99854616");
+
+        dadosPessoa = "Primeiro nome ";
+        dadosPessoa += pessoa.getPrimeiroNome();
+        dadosPessoa = "Sobrenome ";
+        dadosPessoa += pessoa.getSobreNome();
+        dadosPessoa = "Curso Desejado ";
+        dadosPessoa += pessoa.getCursoDesejado();
+        dadosPessoa = "Telefone contato ";
+        dadosPessoa += pessoa.getTelefoneContato();
+
+        int parada = 0;
+
+
 
     }
 }
