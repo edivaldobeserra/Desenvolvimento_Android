@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
         dadosPessoa = "Telefone contato ";
         dadosPessoa += pessoa.getTelefoneContato();
 
+        dadosOutraPessoa = "Primeiro nome ";
+        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
+        dadosOutraPessoa = "Sobrenome ";
+        dadosOutraPessoa += outraPessoa.getSobreNome();
+        dadosOutraPessoa = "Curso Desejado ";
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
+        dadosOutraPessoa = "Telefone contato ";
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();
+
         int parada = 0;
 
 
