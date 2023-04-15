@@ -3,6 +3,7 @@ package devandroid.edivaldo.applistacurso.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.edivaldo.applistacurso.R;
 import devandroid.edivaldo.applistacurso.model.Pessoa;
@@ -33,25 +34,29 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setCursoDesejado("Maquiagem");
         outraPessoa.setTelefoneContato("15 99854616");
 
-        dadosPessoa = "Primeiro nome ";
+        /*
+        dadosPessoa = "Primeiro nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
-        dadosPessoa = "Sobrenome ";
+        dadosPessoa += "Sobrenome: ";
         dadosPessoa += pessoa.getSobreNome();
-        dadosPessoa = "Curso Desejado ";
+        dadosPessoa += "Curso Desejado: ";
         dadosPessoa += pessoa.getCursoDesejado();
-        dadosPessoa = "Telefone contato ";
+        dadosPessoa += "Telefone contato: ";
         dadosPessoa += pessoa.getTelefoneContato();
 
-        dadosOutraPessoa = "Primeiro nome ";
-        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
-        dadosOutraPessoa = "Sobrenome ";
-        dadosOutraPessoa += outraPessoa.getSobreNome();
-        dadosOutraPessoa = "Curso Desejado ";
-        dadosOutraPessoa += outraPessoa.getCursoDesejado();
-        dadosOutraPessoa = "Telefone contato ";
-        dadosOutraPessoa += outraPessoa.getTelefoneContato();
 
-        int parada = 0;
+        dadosOutraPessoa = "Primeiro nome: ";
+        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
+        dadosOutraPessoa += "Sobrenome: ";
+        dadosOutraPessoa += outraPessoa.getSobreNome();
+        dadosOutraPessoa += "Curso Desejado: ";
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
+        dadosOutraPessoa += "Telefone contato: ";
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();
+        */
+
+        Log.i("POOAndroid","Objeto Pessoa: "+pessoa.toString());
+        Log.i("POOAndroid","Objeto Outra Pessoa: "+outraPessoa.toString());
 
 
 
