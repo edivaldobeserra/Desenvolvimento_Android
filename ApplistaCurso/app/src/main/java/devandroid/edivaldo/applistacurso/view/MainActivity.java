@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
     Pessoa pessoa;
     Pessoa outraPessoa;
 
-    String dadosPessoa;
-    String dadosOutraPessoa;
-
     EditText editPrimeiroNome;
     EditText editSobrenome;
     EditText editNomeDoCurso;
@@ -36,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
-        //pessoa.setPrimeiroNome("Edivaldo");
-        //pessoa.setSobreNome("Beserra");
-        //pessoa.setCursoDesejado("Java");
-        //pessoa.setTelefoneContato("15 - 9918812545");
 
         outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("Natacha");
@@ -89,36 +82,12 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(editNomeDoCurso.getText().toString());
                 pessoa.setTelefoneContato(editTelefone_contato.getText().toString());
 
-                Toast.makeText(MainActivity.this, "Salvo"+pessoa.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Salvo" + pessoa.toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
-
-        /*
-        dadosPessoa = "Primeiro nome: ";
-        dadosPessoa += pessoa.getPrimeiroNome();
-        dadosPessoa += "Sobrenome: ";
-        dadosPessoa += pessoa.getSobreNome();
-        dadosPessoa += "Curso Desejado: ";
-        dadosPessoa += pessoa.getCursoDesejado();
-        dadosPessoa += "Telefone contato: ";
-        dadosPessoa += pessoa.getTelefoneContato();
-
-
-        dadosOutraPessoa = "Primeiro nome: ";
-        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
-        dadosOutraPessoa += "Sobrenome: ";
-        dadosOutraPessoa += outraPessoa.getSobreNome();
-        dadosOutraPessoa += "Curso Desejado: ";
-        dadosOutraPessoa += outraPessoa.getCursoDesejado();
-        dadosOutraPessoa += "Telefone contato: ";
-        dadosOutraPessoa += outraPessoa.getTelefoneContato();
-        */
-
-        Log.i("POOAndroid","Objeto Pessoa: "+pessoa.toString());
-        Log.i("POOAndroid","Objeto Outra Pessoa: "+outraPessoa.toString());
-
-
+        Log.i("POOAndroid", "Objeto Pessoa: " + pessoa.toString());
+        Log.i("POOAndroid", "Objeto Outra Pessoa: " + outraPessoa.toString());
 
     }
 }
