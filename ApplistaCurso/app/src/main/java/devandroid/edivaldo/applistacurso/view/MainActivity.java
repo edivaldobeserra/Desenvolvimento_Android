@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
-        pessoa.setPrimeiroNome("Edivaldo");
-        pessoa.setSobreNome("Beserra");
-        pessoa.setCursoDesejado("Java");
-        pessoa.setTelefoneContato("15 - 9918812545");
+        //pessoa.setPrimeiroNome("Edivaldo");
+        //pessoa.setSobreNome("Beserra");
+        //pessoa.setCursoDesejado("Java");
+        //pessoa.setTelefoneContato("15 - 9918812545");
 
         outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("Natacha");
@@ -77,6 +77,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Volte Sempre", Toast.LENGTH_SHORT).show();
                 finish();
+            }
+        });
+
+        btnSalvar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                pessoa.setPrimeiroNome(editPrimeiroNome.getText().toString());
+                pessoa.setSobreNome(editSobrenome.getText().toString());
+                pessoa.setCursoDesejado(editNomeDoCurso.getText().toString());
+                pessoa.setTelefoneContato(editTelefone_contato.getText().toString());
+
+                Toast.makeText(MainActivity.this, "Salvo"+pessoa.toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
