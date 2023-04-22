@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public void opcaoSelecionada(String opcaoSelecionada){
 
         ImageView imagemResultado = findViewById(R.id.imageResultado);
+        TextView textoResultado = findViewById(R.id.textResultado);
 
 
         int numero = new Random().nextInt(3);
@@ -54,7 +56,30 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        if(
+                (opcaoApp =="tesoura" && opcaoSelecionada =="papel")||
+                (opcaoApp =="papel" && opcaoSelecionada =="pedra")||
+                (opcaoApp =="pedra" && opcaoSelecionada =="tesoura")
+        ){
+            textoResultado.setText("Você Perdeu :(");
+
+        }else if(
+
+                (opcaoSelecionada =="tesoura" && opcaoApp =="papel")||
+                (opcaoSelecionada =="papel" && opcaoApp =="pedra")||
+                (opcaoSelecionada =="pedra" && opcaoApp =="tesoura")
+
+        ){
+            textoResultado.setText("Você Ganhou :) ");
+
+        }else{
+            textoResultado.setText("Empatamos :)");
+
+        }
+
         System.out.println("item clicado:" + opcaoApp );
+
+
 
 
 
