@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        System.out.println("item clicado:" + opcaoApp );
+
 
 
     }
