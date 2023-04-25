@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     Pessoa pessoa;
-    Pessoa outraPessoa;
-
     EditText editPrimeiroNome;
     EditText editSobrenome;
     EditText editNomeDoCurso;
@@ -47,27 +45,24 @@ public class MainActivity extends AppCompatActivity {
         controller.toString();
 
         pessoa = new Pessoa();
-
-        outraPessoa = new Pessoa();
-        outraPessoa.setPrimeiroNome("Natacha");
-        outraPessoa.setSobreNome("Oliveira");
-        outraPessoa.setCursoDesejado("Maquiagem");
-        outraPessoa.setTelefoneContato("15 99854616");
+        pessoa.setPrimeiroNome(preferences.getString("primeiroNome",""));
+        pessoa.setSobreNome(preferences.getString("sobreNome",""));
+        pessoa.setCursoDesejado(preferences.getString("nomeCurso",""));
+        pessoa.setTelefoneContato(preferences.getString("telefoneContato",""));
 
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobrenome = findViewById(R.id.editSobrenome);
         editNomeDoCurso = findViewById(R.id.editNomeDoCurso);
         editTelefone_contato = findViewById(R.id.editTelefone_contato);
 
+        editPrimeiroNome.setText(pessoa.getPrimeiroNome());
+        editSobrenome.setText(pessoa.getSobreNome());
+        editNomeDoCurso.setText(pessoa.getCursoDesejado());
+        editTelefone_contato.setText(pessoa.getTelefoneContato());
+
         btnLimpar = findViewById(R.id.btnLimpar);
         btnSalvar = findViewById(R.id.btnSalvar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
-
-        editPrimeiroNome.setText(outraPessoa.getPrimeiroNome());
-        editSobrenome.setText(outraPessoa.getSobreNome());
-        editNomeDoCurso.setText(outraPessoa.getCursoDesejado());
-        editTelefone_contato.setText(outraPessoa.getTelefoneContato());
-
         btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Log.i("POOAndroid", "Objeto Pessoa: " + pessoa.toString());
-        Log.i("POOAndroid", "Objeto Outra Pessoa: " + outraPessoa.toString());
 
     }
 }
