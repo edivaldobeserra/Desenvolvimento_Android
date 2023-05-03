@@ -7,7 +7,7 @@ import devandroid.edivaldo.applistacurso.model.Curso;
 
 public class CursoController {
 
-    public List listCursos;
+    private List listCursos;
 
 
     public List getListaDeCursos(){
