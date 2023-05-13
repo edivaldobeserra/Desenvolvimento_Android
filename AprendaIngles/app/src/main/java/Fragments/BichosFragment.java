@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.example.aprendaingles.R;
 
@@ -17,6 +18,8 @@ import com.example.aprendaingles.R;
  */
 public class BichosFragment extends Fragment {
 
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -25,7 +28,7 @@ public class BichosFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private ImageButton buttonCao, buttonGato, buttonLeao, buttonMacaco, buttonOvelha, buttonVaca;
     public BichosFragment() {
         // Required empty public constructor
     }
@@ -61,6 +64,17 @@ public class BichosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bichos, container, false);
+        View view = inflater.inflate(R.layout.fragment_bichos, container, false);
+
+        buttonCao = view.findViewById(R.id.buttonCao);
+        buttonGato = view.findViewById(R.id.buttonGato);
+        buttonLeao = view.findViewById(R.id.buttonLeao);
+        buttonVaca = view.findViewById(R.id.buttonVaca);
+        buttonOvelha= view.findViewById(R.id.buttonOvelha);
+        buttonMacaco= view.findViewById(R.id.buttonMacaco);
+
+
+
+        return view;
     }
 }
