@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+     
+
         smartTabLayout = findViewById(R.id.smartTablayout);
         viewPager = findViewById(R.id.viewPager);
 
