@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     public void configTablayout(){
         ViewPagerAdapter adapter = new ViewPagerAdapter(this);
         binding.viewPager.setAdapter(adapter);
