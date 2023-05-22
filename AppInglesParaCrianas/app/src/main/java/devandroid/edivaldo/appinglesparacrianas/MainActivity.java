@@ -12,8 +12,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import devandroid.edivaldo.appinglesparacrianas.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    private MediaPlayer mediaPlayer;
-    Button caoSom,gatoSom;
+
 
     private ActivityMainBinding binding;
 
@@ -28,20 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void gatoSom(View view){
-        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.cat);
-        if (mediaPlayer !=null){
-            mediaPlayer.start();
-        }
-
-    }
-    public void caoSom(View view){
-        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.dog);
-        if (mediaPlayer !=null){
-            mediaPlayer.start();
-        }
-
-    }
 
 
     public void configTablayout(){
