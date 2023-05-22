@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/corFundo"
     tools:context=".BichosFragment">
 
 
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
 
+        android:background="@color/corFundo"
         android:src="@drawable/cao"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,7 +38,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@color/corFundo"
         android:src="@drawable/gato"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ButtonLeao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/corFundo"
+        android:src="@drawable/leao"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonCao" />
+
+    <ImageButton
+        android:id="@+id/ButtonMacaco"
+        android:layout_width="103dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/corFundo"
+        android:src="@drawable/macaco"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonGato" />
+
+    <ImageButton
+        android:id="@+id/ButtonOvelha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/corFundo"
+        android:src="@drawable/ovelha"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonLeao" />
+
+    <ImageButton
+        android:id="@+id/ButtomVaca"
+        android:layout_width="103dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/corFundo"
+        android:src="@drawable/vaca"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonMacaco" />
 </androidx.constraintlayout.widget.ConstraintLayout>

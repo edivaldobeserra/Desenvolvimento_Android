@@ -17,19 +17,18 @@ import android.widget.ImageButton;
 
 import devandroid.edivaldo.appinglesparacrianas.databinding.FragmentBichosBinding;
 
-public class BichosFragment extends Fragment  {
+public class BichosFragment extends Fragment {
     private FragmentBichosBinding binding;
 
     MediaPlayer mediaPlayer;
-
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-       binding = FragmentBichosBinding.inflate(inflater, container, false);
-       return binding.getRoot();
+        binding = FragmentBichosBinding.inflate(inflater, container, false);
+        return binding.getRoot();
 
     }
 
@@ -37,29 +36,42 @@ public class BichosFragment extends Fragment  {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.ButtonGato.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer = MediaPlayer.create(getContext(),R.raw.cat);
-                if (mediaPlayer !=null){
-                    mediaPlayer.start();
-                }
-
-
+        binding.ButtonGato.setOnClickListener(v -> {
+            mediaPlayer = MediaPlayer.create(getContext(), R.raw.cat);
+            if (mediaPlayer != null) {
+                mediaPlayer.start();
             }
-
 
         });
 
-        binding.ButtonCao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer = MediaPlayer.create(getContext(),R.raw.dog);
-                if (mediaPlayer !=null){
-                    mediaPlayer.start();
-                }
-
+        binding.ButtonCao.setOnClickListener(v -> {
+            mediaPlayer = MediaPlayer.create(getContext(), R.raw.dog);
+            if (mediaPlayer != null) {
+                mediaPlayer.start();
             }
+
+        });
+
+        binding.ButtomVaca.setOnClickListener(v -> {
+            mediaPlayer = MediaPlayer.create(getContext(), R.raw.cow);
+            if (mediaPlayer != null)
+                mediaPlayer.start();
+
+        });
+        binding.ButtonLeao.setOnClickListener(v -> {
+            mediaPlayer = MediaPlayer.create(getContext(), R.raw.lion);
+            if (mediaPlayer != null)
+                mediaPlayer.start();
+        });
+        binding.ButtonMacaco.setOnClickListener(v -> {
+            mediaPlayer = MediaPlayer.create(getContext(), R.raw.monkey);
+            if (mediaPlayer != null)
+                mediaPlayer.start();
+        });
+        binding.ButtonOvelha.setOnClickListener(v -> {
+            mediaPlayer = MediaPlayer.create(getContext(), R.raw.sheep);
+            if (mediaPlayer != null)
+                mediaPlayer.start();
         });
     }
 }
