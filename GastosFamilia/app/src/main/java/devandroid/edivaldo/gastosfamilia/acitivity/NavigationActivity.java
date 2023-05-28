@@ -1,4 +1,4 @@
-package devandroid.edivaldo.gastosfamilia;
+package devandroid.edivaldo.gastosfamilia.acitivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+
+import devandroid.edivaldo.gastosfamilia.R;
 
 public class NavigationActivity extends AppCompatActivity {
 
@@ -104,7 +106,7 @@ public class NavigationActivity extends AppCompatActivity {
         for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226", Html.FROM_HTML_MODE_LEGACY));
-            dots[i].setTextSize(35);
+            dots[i].setTextSize(25);
             dots[i].setTextColor(getResources().getColor(R.color.grey, getApplicationContext().getTheme()));
             dotIndicator.addView(dots[i]);
         }

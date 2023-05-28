@@ -31,6 +31,7 @@
             android:textColor="@color/white"/>
         
         <EditText
+            android:id="@+id/editNome"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:drawableStart="@drawable/baseline_people_24"
@@ -51,6 +52,7 @@
             android:textColor="@color/white"/>
 
         <EditText
+            android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:drawableStart="@drawable/baseline_email_24"
@@ -72,6 +74,7 @@
             android:textColor="@color/white"/>
 
         <EditText
+            android:id="@+id/editSenha"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="16dp"
@@ -86,6 +89,7 @@
             />
 
         <android.widget.Button
+            android:id="@+id/btnCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

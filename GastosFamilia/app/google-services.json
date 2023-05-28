@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "775423268387",
+    "project_id": "familia-36230",
+    "storage_bucket": "familia-36230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775423268387:android:64778f8a1ac1bbff868396",
+        "android_client_info": {
+          "package_name": "devandroid.edivaldo.gastosfamilia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc60fK_4ptonrW135rlEEpRBloHsn2jgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
