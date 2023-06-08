@@ -3,26 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
-
+    app:startDestination="@id/home">
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="devandroid.edivaldo.gastosfamilia.acitivity.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/home"
+        android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="devandroid.edivaldo.gastosfamilia.acitivity.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/Despesas"
+        android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.DespesasFragment"
+        android:label="fragment_despesas"
+        tools:layout="@layout/fragment_despesas" />
+    <fragment
+        android:id="@+id/Receita"
+        android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.ReceitasFragment"
+        android:label="fragment_receitas"
+        tools:layout="@layout/fragment_receitas" />
+    <fragment
+        android:id="@+id/Saida"
+        android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.pesquisaFragment"
+        android:label="fragment_pesquisa"
+        tools:layout="@layout/fragment_pesquisa" />
 </navigation>

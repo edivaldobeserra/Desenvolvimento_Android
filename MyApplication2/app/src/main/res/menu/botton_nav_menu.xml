@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/placeholder"
-        android:icon="@drawable/baseline_playlist_add_24"
+        android:icon="@drawable/baseline_add_24"
         android:title="Add"/>
     <item
         android:id="@+id/person"
@@ -20,7 +20,7 @@
         android:title="Profile"/>
     <item
         android:id="@+id/settings"
-        android:icon="@drawable/baseline_search_24"
+        android:icon="@drawable/baseline_settings_24"
         android:title="Configuração"/>
 
 </menu>

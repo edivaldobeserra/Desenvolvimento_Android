@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/receitas"
+        android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.ReceitasFragment"
+        android:label="fragment_receitas"
+        tools:layout="@layout/fragment_receitas" />
+    <fragment
+        android:id="@+id/despesas"
+        android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.DespesasFragment"
+        android:label="fragment_despesas"
+        tools:layout="@layout/fragment_despesas" />
+    <fragment
+        android:id="@+id/saida"
+        android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.pesquisaFragment"
+        android:label="fragment_pesquisa"
+        tools:layout="@layout/fragment_pesquisa" />
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/navigation">
+        <navigation
+            android:id="@+id/navigation"
+            app:startDestination="@id/home">
+            <fragment
+                android:id="@+id/home"
+                android:name="devandroid.edivaldo.gastosfamilia.acitivity.fragments.HomeFragment"
+                android:label="fragment_home"
+                tools:layout="@layout/fragment_home" />
+        </navigation>
+    </navigation>
+</navigation>

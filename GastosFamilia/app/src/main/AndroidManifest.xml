@@ -18,9 +18,6 @@
             android:name=".acitivity.Login"
             android:exported="false" />
         <activity
-            android:name=".acitivity.MenuActivity"
-            android:exported="true" />
-        <activity
             android:name=".acitivity.IntroCadastro"
             android:exported="false" />
         <activity
