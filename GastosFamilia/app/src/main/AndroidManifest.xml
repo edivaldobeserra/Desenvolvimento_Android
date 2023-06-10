@@ -12,13 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GastosFamilia"
         tools:targetApi="31">
-
-
         <activity
-            android:name=".acitivity.Login"
+            android:name=".PrincipalActivity"
             android:exported="false" />
         <activity
-            android:name=".acitivity.IntroCadastro"
+            android:name=".acitivity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".acitivity.CadastroActivity"
             android:exported="false" />
         <activity
             android:name=".acitivity.GetStarted"
@@ -35,7 +36,6 @@
         <activity
             android:name=".acitivity.MainActivity"
             android:exported="false" />
-
 
         <meta-data
             android:name="preloaded_fonts"

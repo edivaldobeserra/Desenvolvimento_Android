@@ -10,9 +10,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import devandroid.edivaldo.gastosfamilia.R;
+import devandroid.edivaldo.gastosfamilia.config.ConfiguracaoFirebase;
 
 public class NavigationActivity extends AppCompatActivity {
+
+    FirebaseAuth autenticação;
 
     ViewPager slideViewPager;
     LinearLayout dotIndicator;
@@ -52,6 +57,9 @@ public class NavigationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+        verificarUsuarioLogado();
+
+
 
         backButton = findViewById(R.id.backButton);
         nextButton = findViewById(R.id.nextButton);
@@ -83,10 +91,11 @@ public class NavigationActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NavigationActivity.this, Login.class);
+                Intent i = new Intent(NavigationActivity.this, LoginActivity.class);
                 startActivity(i);
                 finish();
             }
+
         });
 
         slideViewPager = (ViewPager) findViewById(R.id.slideViewPager);
@@ -97,6 +106,8 @@ public class NavigationActivity extends AppCompatActivity {
 
         setDotIndicator(0);
         slideViewPager.addOnPageChangeListener(viewPagerListener);
+
+
     }
 
     public void setDotIndicator(int position) {
@@ -116,5 +127,27 @@ public class NavigationActivity extends AppCompatActivity {
 
     private int getItem(int i) {
         return slideViewPager.getCurrentItem() + i;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        verificarUsuarioLogado ();
+
+    }
+
+    public void verificarUsuarioLogado (){
+        autenticação = ConfiguracaoFirebase.getFirebaseautenticacao();
+        //autenticação.signOut();
+
+        if (autenticação.getCurrentUser() != null){
+            abrirTelaPrincipal();
+
+        }
+
+    }
+    public void abrirTelaPrincipal(){
+        startActivity(new Intent(this, MainActivity.class));
+
     }
 }

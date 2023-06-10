@@ -17,14 +17,15 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
+import devandroid.edivaldo.gastosfamilia.PrincipalActivity;
 import devandroid.edivaldo.gastosfamilia.R;
 import devandroid.edivaldo.gastosfamilia.config.ConfiguracaoFirebase;
 import devandroid.edivaldo.gastosfamilia.model.Usuario;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private EditText campoEmail, campoSenha;
-    private Button btnEntrar;
+    private Button botaoEntrar;
     private Usuario usuario;
     private FirebaseAuth autenticacao;
 
@@ -35,8 +36,8 @@ public class Login extends AppCompatActivity {
 
         campoEmail = findViewById(R.id.editEmail);
         campoSenha = findViewById(R.id.editSenha);
-        btnEntrar = findViewById(R.id.btnEntrar);
-        btnEntrar.setOnClickListener(new View.OnClickListener() {
+        botaoEntrar = findViewById(R.id.buttonEntrar);
+        botaoEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -53,11 +54,11 @@ public class Login extends AppCompatActivity {
 ;
 
                     } else {
-                        Toast.makeText(Login.this, "Prencha a senha!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Prencha a senha!", Toast.LENGTH_SHORT).show();
                     }
 
                 } else {
-                    Toast.makeText(Login.this, "Prencha o Email!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Prencha o Email!", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -94,7 +95,7 @@ public class Login extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
-                    Toast.makeText(Login.this,excecao,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this,excecao,Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -102,7 +103,7 @@ public class Login extends AppCompatActivity {
 
     }
     public void abrirTelaPrincipal(){
-       startActivity(new Intent(this, MainActivity.class));
+       startActivity(new Intent(this, PrincipalActivity.class));
        finish();
     }
 }

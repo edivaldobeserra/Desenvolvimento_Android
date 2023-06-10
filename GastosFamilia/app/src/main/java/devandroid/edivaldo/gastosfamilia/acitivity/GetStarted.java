@@ -16,6 +16,7 @@ public class GetStarted extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,7 @@ public class GetStarted extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(GetStarted.this, IntroCadastro.class);
+                Intent i = new Intent(GetStarted.this, CadastroActivity.class);
                 startActivity(i);
                 finish();
             }
@@ -37,7 +38,7 @@ public class GetStarted extends AppCompatActivity {
         entrarConta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GetStarted.this, Login.class);
+                Intent intent = new Intent(GetStarted.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

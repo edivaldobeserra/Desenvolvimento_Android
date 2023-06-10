@@ -19,12 +19,13 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 import devandroid.edivaldo.gastosfamilia.R;
 import devandroid.edivaldo.gastosfamilia.config.ConfiguracaoFirebase;
+import devandroid.edivaldo.gastosfamilia.helper.Base64Custom;
 import devandroid.edivaldo.gastosfamilia.model.Usuario;
 
-public class IntroCadastro extends AppCompatActivity {
+public class CadastroActivity extends AppCompatActivity {
 
     private EditText campoNome, campoEmail, campoSenha;
-    private Button btnCadastrar;
+    private Button botaoCadastrar;
     private FirebaseAuth autenticacao;
     private Usuario usuario;
 
@@ -32,18 +33,17 @@ public class IntroCadastro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro_cadastro);
+        setContentView(R.layout.activity_cadastro);
 
         campoNome = findViewById(R.id.editNome);
         campoEmail = findViewById(R.id.editEmail);
         campoSenha = findViewById(R.id.editSenha);
-        btnCadastrar = findViewById(R.id.btnCadastrar);
+        botaoCadastrar = findViewById(R.id.buttonCadastrar);
 
-        btnCadastrar.setOnClickListener(v -> {
+        botaoCadastrar.setOnClickListener(v -> {
             String textoNome = campoNome.getText().toString();
             String textoEmail = campoEmail.getText().toString();
             String textoSenha = campoSenha.getText().toString();
-
 
             //Validar se os campos foram preenchidos
 
@@ -55,20 +55,20 @@ public class IntroCadastro extends AppCompatActivity {
                         usuario.setNome(textoNome);
                         usuario.setEmail(textoEmail);
                         usuario.setSenha(textoSenha);
-                        cadatrarUsuario();
+                        cadastrarUsuario();
 
                     } else {
-                        Toast.makeText(IntroCadastro.this, "Preencha sua Senha!",
+                        Toast.makeText(CadastroActivity.this, "Preencha sua Senha!",
                                 Toast.LENGTH_LONG).show();
                     }
 
                 } else {
-                    Toast.makeText(IntroCadastro.this, "Preencha seu E-mail!",
+                    Toast.makeText(CadastroActivity.this, "Preencha seu E-mail!",
                             Toast.LENGTH_LONG).show();
                 }
 
             } else {
-                Toast.makeText(IntroCadastro.this, "Preencha seu Nome!",
+                Toast.makeText(CadastroActivity.this, "Preencha seu Nome!",
                         Toast.LENGTH_LONG).show();
 
             }
@@ -77,7 +77,7 @@ public class IntroCadastro extends AppCompatActivity {
         });
     }
 
-    public void cadatrarUsuario(){
+    public void cadastrarUsuario(){
 
         autenticacao = ConfiguracaoFirebase.getFirebaseautenticacao();
         autenticacao.createUserWithEmailAndPassword(
@@ -86,7 +86,14 @@ public class IntroCadastro extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
               if (task.isSuccessful()){
-                  abrirTelaPrincipal();
+              finish();
+
+                  String idUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                  usuario.setIdUsuario( idUsuario );
+                  usuario.salvar();
+
+
+
               }else{
                   String excecao = "";
                   try {
@@ -102,7 +109,7 @@ public class IntroCadastro extends AppCompatActivity {
                       e.printStackTrace();
                   }
 
-                  Toast.makeText(IntroCadastro.this,excecao,
+                  Toast.makeText(CadastroActivity.this,excecao,
                           Toast.LENGTH_LONG).show();
 
               }

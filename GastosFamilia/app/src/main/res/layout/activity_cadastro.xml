@@ -89,7 +89,7 @@
             />
 
         <android.widget.Button
-            android:id="@+id/btnCadastrar"
+            android:id="@+id/buttonCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
