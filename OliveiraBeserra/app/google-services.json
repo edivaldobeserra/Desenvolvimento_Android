@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "269634536453",
+    "project_id": "fmloliveirabeserra",
+    "storage_bucket": "fmloliveirabeserra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269634536453:android:9a4bb7a5a45dd51c44886c",
+        "android_client_info": {
+          "package_name": "devandroid.edivaldo.oliveirabeserra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269634536453-uj1rlo98gdtl4dfgr3rlnuf5m8n6c5cm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "devandroid.edivaldo.oliveirabeserra",
+            "certificate_hash": "f8b7801c722c1a9ab06a025e7ec99d1150c50822"
+          }
+        },
+        {
+          "client_id": "269634536453-s7k48or5ssfm7ji0f3efkiqfbfui7pu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTAfgXe8QZdIOaBmQXGyF80cNQAAOTPcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269634536453-s7k48or5ssfm7ji0f3efkiqfbfui7pu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

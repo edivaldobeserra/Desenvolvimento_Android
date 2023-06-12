@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/Despesas"
+        android:name="devandroid.edivaldo.oliveirabeserra.fragments.DespesasFragment"
+        android:label="fragment_despesas"
+        tools:layout="@layout/fragment_despesas" />
+    <fragment
+        android:id="@+id/Receita"
+        android:name="devandroid.edivaldo.oliveirabeserra.fragments.ReceitaFragment"
+        android:label="fragment_receita"
+        tools:layout="@layout/fragment_receita" />
+    <fragment
+        android:id="@+id/home"
+        android:name="devandroid.edivaldo.oliveirabeserra.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/Saida"
+        android:name="devandroid.edivaldo.oliveirabeserra.fragments.PesquisaFragment"
+        android:label="fragment_pesquisa"
+        tools:layout="@layout/fragment_pesquisa" />
+</navigation>
