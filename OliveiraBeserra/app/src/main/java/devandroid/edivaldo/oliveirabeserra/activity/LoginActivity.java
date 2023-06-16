@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     public void validarLogin(){
-        autenticacao = ConfiguraçãoFirebase.getFirebaseautenticacao();
+        autenticacao = ConfiguraçãoFirebase.getFirebaseAutenticacao();
         autenticacao.signInWithEmailAndPassword(
                 usuario.getEmail(),
                 usuario.getSenha()
