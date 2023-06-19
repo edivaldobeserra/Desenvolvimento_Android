@@ -6,11 +6,6 @@
     app:startDestination="@id/home">
 
     <fragment
-        android:id="@+id/Receita"
-        android:name="devandroid.edivaldo.oliveirabeserra.fragments.ReceitaFragment"
-        android:label="fragment_receita"
-        tools:layout="@layout/fragment_receita" />
-    <fragment
         android:id="@+id/home"
         android:name="devandroid.edivaldo.oliveirabeserra.fragments.HomeFragment"
         android:label="fragment_home"
@@ -25,4 +20,9 @@
         android:name="devandroid.edivaldo.oliveirabeserra.activity.DespesaActivity"
         android:label="activity_receita"
         tools:layout="@layout/activity_despesa" />
+    <activity
+        android:id="@+id/Receita"
+        android:name="devandroid.edivaldo.oliveirabeserra.activity.ReceitasActivity"
+        android:label="activity_receitas"
+        tools:layout="@layout/activity_receitas" />
 </navigation>
