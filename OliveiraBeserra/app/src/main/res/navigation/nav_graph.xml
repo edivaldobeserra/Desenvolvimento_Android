@@ -10,11 +10,6 @@
         android:name="devandroid.edivaldo.oliveirabeserra.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/Saida"
-        android:name="devandroid.edivaldo.oliveirabeserra.fragments.PesquisaFragment"
-        android:label="fragment_pesquisa"
-        tools:layout="@layout/fragment_pesquisa" />
     <activity
         android:id="@+id/Despesas"
         android:name="devandroid.edivaldo.oliveirabeserra.activity.DespesaActivity"
@@ -25,4 +20,9 @@
         android:name="devandroid.edivaldo.oliveirabeserra.activity.ReceitasActivity"
         android:label="activity_receitas"
         tools:layout="@layout/activity_receitas" />
+    <fragment
+        android:id="@+id/Saida"
+        android:name="devandroid.edivaldo.oliveirabeserra.fragments.DespesasFragment"
+        android:label="fragment_despesas"
+        tools:layout="@layout/fragment_despesas" />
 </navigation>
