@@ -10,19 +10,20 @@
         android:name="devandroid.edivaldo.oliveirabeserra.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
-    <activity
-        android:id="@+id/Despesas"
-        android:name="devandroid.edivaldo.oliveirabeserra.activity.DespesaActivity"
-        android:label="activity_receita"
-        tools:layout="@layout/activity_despesa" />
-    <activity
-        android:id="@+id/Receita"
-        android:name="devandroid.edivaldo.oliveirabeserra.activity.ReceitasActivity"
-        android:label="activity_receitas"
-        tools:layout="@layout/activity_receitas" />
+
     <fragment
-        android:id="@+id/Saida"
+        android:id="@+id/Despesas"
         android:name="devandroid.edivaldo.oliveirabeserra.fragments.DespesasFragment"
         android:label="fragment_despesas"
         tools:layout="@layout/fragment_despesas" />
+    <fragment
+        android:id="@+id/Receita"
+        android:name="devandroid.edivaldo.oliveirabeserra.fragments.ReceitasFragment"
+        android:label="fragment_receitas"
+        tools:layout="@layout/fragment_receitas" />
+    <fragment
+        android:id="@+id/Saida"
+        android:name="devandroid.edivaldo.oliveirabeserra.fragments.PesquisaFragment"
+        android:label="fragment_pesquisa"
+        tools:layout="@layout/fragment_pesquisa" />
 </navigation>

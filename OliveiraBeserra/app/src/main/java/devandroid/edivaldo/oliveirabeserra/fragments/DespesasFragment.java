@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -21,7 +20,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
 import devandroid.edivaldo.oliveirabeserra.R;
-import devandroid.edivaldo.oliveirabeserra.activity.DespesaActivity;
 import devandroid.edivaldo.oliveirabeserra.activity.config.ConfiguraçãoFirebase;
 import devandroid.edivaldo.oliveirabeserra.helper.Base64Custom;
 import devandroid.edivaldo.oliveirabeserra.helper.DateCustom;
