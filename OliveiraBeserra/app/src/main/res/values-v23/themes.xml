@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.OliveiraBeserra" parent="Base.Theme.OliveiraBeserra">
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:navigationBarColor">@color/lavander</item>
+        <item name="android:statusBarColor">@color/lavander</item>
+        <item name="android:windowLightStatusBar">@color/black</item>
+    </style>
+</resources>

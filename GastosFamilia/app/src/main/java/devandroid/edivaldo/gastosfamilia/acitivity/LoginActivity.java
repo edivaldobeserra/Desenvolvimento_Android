@@ -17,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
-import devandroid.edivaldo.gastosfamilia.PrincipalActivity;
 import devandroid.edivaldo.gastosfamilia.R;
 import devandroid.edivaldo.gastosfamilia.config.ConfiguracaoFirebase;
 import devandroid.edivaldo.gastosfamilia.model.Usuario;

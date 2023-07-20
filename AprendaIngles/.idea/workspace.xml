@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9376f5fa-05d7-4da6-bd1b-683d0c9b2870" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/java/devandroid/edivaldo/inglesapp/Fragments/BichosFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/java/devandroid/edivaldo/inglesapp/Fragments/NumerosFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/java/devandroid/edivaldo/inglesapp/Fragments/VogaisFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/cao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/cinco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/direitos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/dois.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/gato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/leao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/macaco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/ovelha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/quatro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/segundo_fundo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/seis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/tres.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/um.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/drawable/vaca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/layout/fragment_bichos.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/layout/fragment_numeros.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/layout/fragment_vogais.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/cat.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/cow.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/dog.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/five.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/four.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/lion.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/monkey.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/one.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/sheep.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/six.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/three.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/raw/two.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppGasEta/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppGasEta/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InglesApp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../InglesApp/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InglesApp/app/src/main/java/devandroid/edivaldo/inglesapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/java/devandroid/edivaldo/inglesapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InglesApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InglesApp/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InglesApp/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9376f5fa-05d7-4da6-bd1b-683d0c9b2870" name="Default Changelist" comment="" />
+      <created>1684664574955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684664574955</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="20" width="1346" height="688" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32970452" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32972974" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Assistant" weight="0.33514774" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>

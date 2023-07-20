@@ -11,7 +11,6 @@ import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import devandroid.edivaldo.gastosfamilia.PrincipalActivity;
 import devandroid.edivaldo.gastosfamilia.R;
 import devandroid.edivaldo.gastosfamilia.config.ConfiguracaoFirebase;
 import devandroid.edivaldo.gastosfamilia.databinding.ActivityMainBinding;

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "422907585717",
+    "project_id": "familiaoliveirabeserra",
+    "storage_bucket": "familiaoliveirabeserra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422907585717:android:851e98c8cba3a6650dcafc",
+        "android_client_info": {
+          "package_name": "devandroid.edivaldo.fml"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422907585717-ul0r95t65hmd5k6dkbrhl2dfuktanp1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "devandroid.edivaldo.fml",
+            "certificate_hash": "f8b7801c722c1a9ab06a025e7ec99d1150c50822"
+          }
+        },
+        {
+          "client_id": "422907585717-16s75m1tsjds99vkql5rkqsavo6kiuig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ3eB_C7LQH1QsGxLINp9wKkgwh7C5dUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422907585717-16s75m1tsjds99vkql5rkqsavo6kiuig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

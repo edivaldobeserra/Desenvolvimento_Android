@@ -1,4 +1,4 @@
-package devandroid.edivaldo.gastosfamilia;
+package devandroid.edivaldo.gastosfamilia.acitivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -7,6 +7,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 
+import devandroid.edivaldo.gastosfamilia.R;
 import devandroid.edivaldo.gastosfamilia.databinding.ActivityMainBinding;
 import devandroid.edivaldo.gastosfamilia.databinding.ActivityPrincipalBinding;
 

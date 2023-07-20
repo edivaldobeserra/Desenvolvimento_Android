@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_login" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Acesse sua conta"
+            android:textColor="@color/white"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="E-mail"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="16dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="14dp"
+            android:layout_marginTop="4dp"
+            android:hint="Digite seu E-mail"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Senha"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/baseline_vpn_key_24"
+            android:drawablePadding="16dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:hint="Digite sua senha"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+        <android.widget.Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button"
+            android:padding="14dp"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:textColor="@color/lavander"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btCadastro"
+            android:onClick="btCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Cadastre-se"/>
+        
+        <ProgressBar
+            android:id="@+id/progressiLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
