@@ -12,10 +12,12 @@ import java.util.List;
 
 public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyviewHolder> {
     private List<Produto> produtoList;
+    private onClick onClick;
 
 
-    public AdapterProduto(List<Produto> produtoList) {
+    public AdapterProduto(List<Produto> produtoList, onClick onClick) {
         this.produtoList = produtoList;
+        this.onClick = onClick;
     }
 
     //PASSAR O LAYOUT NA CLASSE onCreateViewHolder.
@@ -34,13 +36,21 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyviewHo
         holder.textEstoque.setText("Estoque: " + produto.getEstoque());
         holder.textValor.setText("R$ "+ produto.getValor());
 
+        holder.itemView.setOnClickListener(View ->onClick.onClickListener(produto));
+
     }
     //RETORNAR A QUANTIDADE DE PRODUTOS.
     @Override
     public int getItemCount() {
+
         return produtoList.size();
     }
-    //CONFIGURA QUAIS ELEMENTOS VAI TER NA LISTAGEM.
+
+    public interface onClick{
+        void onClickListener(Produto produto);
+
+    }
+
     static class MyviewHolder extends RecyclerView.ViewHolder{
         TextView textEstoque, textValor, textProduto;
 

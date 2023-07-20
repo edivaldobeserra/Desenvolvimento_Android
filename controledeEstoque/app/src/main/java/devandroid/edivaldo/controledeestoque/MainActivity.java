@@ -5,11 +5,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
+
+import com.tsuryo.swipeablerv.SwipeLeftRightCallback;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterProduto.onClick {
     private AdapterProduto adapterProduto;
     private List<Produto> produtoList = new ArrayList<>();
     private RecyclerView rvEstoque;
@@ -27,8 +30,22 @@ public class MainActivity extends AppCompatActivity {
     private void configRecyclerView(){
         rvEstoque.setLayoutManager(new LinearLayoutManager(this));
         rvEstoque.setHasFixedSize(true);
-        adapterProduto = new AdapterProduto(produtoList);
+        adapterProduto = new AdapterProduto(produtoList,this);
         rvEstoque.setAdapter(adapterProduto);
+
+        rvEstoque.setListener(new SwipeLeftRightCallback.Listener() {
+            @Override
+            public void onSwipedLeft(int position) {
+                mList.remove(position);
+                mAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onSwipedRight(int position) {
+                mList.remove(position);
+                mAdapter.notifyDataSetChanged();
+            }
+        });
     }
     private void carregaLista(){
 
@@ -76,5 +93,11 @@ public class MainActivity extends AppCompatActivity {
         produtoList.add(produto6);
 
 
+    }
+
+    @Override
+    public void onClickListener(Produto produto) {
+        Toast.makeText(this,produto.getNome(), Toast.LENGTH_SHORT).show();
+        
     }
 }
