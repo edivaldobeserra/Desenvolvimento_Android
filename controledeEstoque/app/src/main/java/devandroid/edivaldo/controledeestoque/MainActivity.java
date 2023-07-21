@@ -1,6 +1,7 @@
 package devandroid.edivaldo.controledeestoque;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.tsuryo.swipeablerv.SwipeLeftRightCallback;
+import com.tsuryo.swipeablerv.SwipeableRecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,12 +17,13 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements AdapterProduto.onClick {
     private AdapterProduto adapterProduto;
     private List<Produto> produtoList = new ArrayList<>();
-    private RecyclerView rvEstoque;
+    private SwipeableRecyclerView rvEstoque;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         rvEstoque = findViewById(R.id.rvEstoque);
 
@@ -36,14 +39,13 @@ public class MainActivity extends AppCompatActivity implements AdapterProduto.on
         rvEstoque.setListener(new SwipeLeftRightCallback.Listener() {
             @Override
             public void onSwipedLeft(int position) {
-                mList.remove(position);
-                mAdapter.notifyDataSetChanged();
-            }
 
+            }
             @Override
             public void onSwipedRight(int position) {
-                mList.remove(position);
-                mAdapter.notifyDataSetChanged();
+                produtoList.remove(position);
+                adapterProduto.notifyItemRemoved(position);
+
             }
         });
     }
